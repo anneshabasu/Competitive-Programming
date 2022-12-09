@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int k2,k3,k5,k6;
+    cin>>k2>>k3>>k5>>k6;
+    int count_256;
+    int count_32;
+    count_256 = min(k2, min(k5,k6));
+    count_32 = min((k2-count_256),k3);
+    cout<<256*count_256 + 32*count_32<<endl;
+}
